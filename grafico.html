@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Salário Mínimo</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="grafico.html">Gráfico do Salário Mínimo</a>
+        <a href="sobre.html">Sobre</a>
+  </div>
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+  </div>
+
+<div class="containerlogo">
+
+  <img src="img/logojlk.png" alt="Imagem" style="max-width: 100%; height: auto;">
+
+</div>
+<div class="container">
+    <canvas id="salarioChart"></canvas>
+    <div class="options">
+        <label for="format">Escolha o formato:</label>
+        <select id="format">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+            <option value="pdf">PDF</option>
+        </select>
+        <button onclick="downloadChart()">Baixar Gráfico</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 JLK </p>
+</footer>
+    <script src="script02.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

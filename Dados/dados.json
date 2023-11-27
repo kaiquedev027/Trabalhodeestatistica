@@ -1,0 +1,44 @@
+{
+    "supermercados": [
+        {
+            "nome": "Mercado Paraíso",
+            "produtos": {
+                "arroz": 2.5,
+                "feijao": 3.0,
+                "cafe": 5.0,
+                "leite": 2.2,
+                "suco": 4.5
+            }
+        },
+        {
+            "nome": "Central Max",
+            "produtos": {
+                "arroz": 2.7,
+                "feijao": 2.8,
+                "cafe": 4.8,
+                "leite": 2.0,
+                "suco": 4.2
+            }
+        },
+        {
+            "nome": "Chama Atacadista",
+            "produtos": {
+                "arroz": 2.3,
+                "feijao": 3.2,
+                "cafe": 5.2,
+                "leite": 2.5,
+                "suco": 4.0
+            }
+        },
+        {
+            "nome": "Faros",
+            "produtos": {
+                "arroz": 2.6,
+                "feijao": 3.5,
+                "cafe": 4.5,
+                "leite": 2.3,
+                "suco": 4.8
+            }
+        }
+    ]
+}

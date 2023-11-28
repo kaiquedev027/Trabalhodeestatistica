@@ -2,6 +2,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+img {
+    width: 200px; /* Defina o tamanho desejado para a largura da imagem. */
+    height: auto;
+    display: block;
+}
 .containerlogo {
     display: flex;
     justify-content: center;

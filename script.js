@@ -3,19 +3,28 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             const anos = data.map(item => item.ano);
-            const salarios = data.map(item => item.Cesta);
+            const salarios = data.map(item => item.salario);
+            const cestas = data.map(item => item.Cesta);
 
-            const ctx = document.getElementById('cestaChart').getContext('2d');
-            const salarioChart = new Chart(ctx, {
+            const ctx = document.getElementById('salarioCestaChart').getContext('2d');
+            const salarioCestaChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: anos,
-                    datasets: [{
-                        label: 'Cesta Básica',
-                        borderColor: 'rgb(75, 192, 192)',
-                        data: salarios,
-                        fill: false
-                    }]
+                    datasets: [
+                        {
+                            label: 'Salário',
+                            borderColor: 'rgb(75, 192, 192)',
+                            data: salarios,
+                            fill: false
+                        },
+                        {
+                            label: 'Cesta Básica',
+                            borderColor: 'rgb(255, 99, 132)',
+                            data: cestas,
+                            fill: false
+                        }
+                    ]
                 },
                 options: {
                     responsive: true,
@@ -24,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     },
                     scales: {
                         x: { stacked: true },
-                        y: { stacked: true }
+                        x: { stacked: true }
                     }
                 }
             });
@@ -32,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function downloadChart() {
     const format = document.getElementById("format").value;
-    const canvas = document.getElementById("cestaChart");
+    const canvas = document.getElementById("salarioCestaChart");
 
     if (format === "pdf") {
         const pdfDoc = pdfMake.createPdf({

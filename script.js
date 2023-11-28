@@ -1,22 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("Dados/dados.json")
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('Dados/dados.json')
         .then(response => response.json())
         .then(data => {
-            const supermercados = data.supermercados;
-            const produtos = Object.keys(supermercados[0].produtos);
-            
-            const datasets = supermercados.map(supermercado => ({
-                label: supermercado.nome,
-                data: produtos.map(produto => supermercado.produtos[produto]),
-                backgroundColor: getRandomColor()
-            }));
+            const anos = data.map(item => item.ano);
+            const salarios = data.map(item => item.Cesta);
 
-            const ctx = document.getElementById("myChart").getContext("2d");
-            new Chart(ctx, {
-                type: "line",
+            const ctx = document.getElementById('cestaChart').getContext('2d');
+            const salarioChart = new Chart(ctx, {
+                type: 'line',
                 data: {
-                    labels: produtos,
-                    datasets: datasets
+                    labels: anos,
+                    datasets: [{
+                        label: 'Cesta Básica',
+                        borderColor: 'rgb(75, 192, 192)',
+                        data: salarios,
+                        fill: false
+                    }]
                 },
                 options: {
                     responsive: true,
@@ -31,10 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 });
-
 function downloadChart() {
     const format = document.getElementById("format").value;
-    const canvas = document.getElementById("myChart");
+    const canvas = document.getElementById("cestaChart");
 
     if (format === "pdf") {
         const pdfDoc = pdfMake.createPdf({
@@ -62,3 +60,4 @@ function downloadChart() {
 function getRandomColor() {
     return "#" + Math.floor(Math.random()*16777215).toString(16);
 }
+

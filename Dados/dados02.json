@@ -1,18 +1,5 @@
 [
   
-    {"ano": 2000, "salario": 151},
-    {"ano": 2001, "salario": 180},
-    {"ano": 2002, "salario": 200},
-    {"ano": 2003, "salario": 240},
-    {"ano": 2004, "salario": 260},
-    {"ano": 2005, "salario": 300},
-    {"ano": 2006, "salario": 350},
-    {"ano": 2007, "salario": 380},
-    {"ano": 2008, "salario": 415},
-    {"ano": 2009, "salario": 465},
-    {"ano": 2010, "salario": 510},
-    {"ano": 2011, "salario": 545},
-    {"ano": 2011, "salario": 540},
     {"ano": 2012, "salario": 622},
     {"ano": 2013, "salario": 678},
     {"ano": 2014, "salario": 724},

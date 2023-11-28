@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gráfico Cesta Basica</title>
+    <title>Gráfico Salário Mínimo</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
@@ -28,10 +28,11 @@
 
 </div>
 <div class="container">
-    <canvas id="cestaChart"></canvas>
+    <canvas id="salarioCestaChart"></canvas>
     <div class="options">
         <label for="format">Escolha o formato:</label>
         <select id="format">
+            <option value="png">PNG</option>
             <option value="jpeg">JPEG</option>
             <option value="pdf">PDF</option>
         </select>

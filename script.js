@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     datasets: [
                         {
                             label: 'Salário',
-                            borderColor: 'rgb(75, 192, 192)',
+                            borderColor: 'rgb(0,128,0)',
                             data: salarios,
                             fill: false
                         },
                         {
                             label: 'Cesta Básica',
-                            borderColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255,140,0)',
                             data: cestas,
                             fill: false
                         }

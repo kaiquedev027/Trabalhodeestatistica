@@ -37,10 +37,10 @@
       }
     },
     {
-      "src": "/src/json/dados.json",
+      "src": "/dados.json",
       "use": "@vercel/static-build",
       "config": {
-        "output": "public/json"
+        "output": "public"
       }
     }
   ],

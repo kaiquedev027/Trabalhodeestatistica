@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public"
+      }
+    },
+    {
+      "src": "/src/css/style.css",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public/css"
+      }
+    },
+    {
+      "src": "/src/js/script.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public/js"
+      }
+    },
+    {
+      "src": "/src/js/menu.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public/js"
+      }
+    },
+    {
+      "src": "/public/assets/img/logojlk.png",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public/assets/img"
+      }
+    },
+    {
+      "src": "/src/json/dados.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "output": "public/json"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

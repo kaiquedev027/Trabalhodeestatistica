@@ -34,9 +34,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     scales: {
                         x: { stacked: true },
                         x: { stacked: true }
+                      },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                fontColor: 'white' // Configuração da cor do texto da legenda
+                            }
+                        }
                     }
                 }
             });
+
+            // Defina a cor de fundo como branco no Chart.js
+            salarioCestaChart.options.plugins.backgrounds.backgroundColor = 'white';
+            
+            // Atualize o gráfico para aplicar a cor de fundo
+            salarioCestaChart.update();
         });
 });
 function downloadChart() {

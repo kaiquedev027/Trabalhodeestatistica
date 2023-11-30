@@ -77,5 +77,15 @@ footer {
         padding: 10px;
         background-color: #111;
         color: #fff;
-        margin: 0;
+
     }
+footer p {
+    margin: 0; /* Remover margens padrão do parágrafo */
+}
+
+/* Adaptação para telas menores */
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 14px; /* Reduzir o tamanho da fonte para telas menores */
+    }
+}

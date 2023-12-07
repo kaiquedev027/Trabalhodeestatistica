@@ -1,1 +1,22 @@
-
+[
+    {"Data": 1, "fechamento": 1.33,"desvio":0.24},
+    {"Data": 3, "fechamento": 1.48},
+    {"Data": 7, "fechamento": 1.77},
+    {"Data": 8, "fechamento": 1.8},
+    {"Data": 9, "fechamento": 1.72},
+    {"Data": 10, "fechamento": 1.77},
+    {"Data": 13, "fechamento": 1.72},
+    {"Data": 14, "fechamento": 1.78},
+    {"Data": 16, "fechamento": 2.19},
+    {"Data": 17, "fechamento": 2.2},
+    {"Data": 20, "fechamento": 2.28},
+    {"Data": 21, "fechamento": 2.15},
+    {"Data": 22, "fechamento": 2.09},
+    {"Data": 23, "fechamento": 2.17},
+    {"Data": 24, "fechamento": 2},
+    {"Data": 27, "fechamento": 1.98},
+    {"Data": 28, "fechamento": 1.9,"media":1.90},
+    {"Data": 29, "fechamento": 1.89,"mediana":1.9},
+    {"Data": 30, "fechamento": 2.02}
+    
+]

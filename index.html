@@ -6,8 +6,9 @@
     <title>JLK</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.8/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.8/vfs_fonts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,8 +28,17 @@
 
 </div>
 <div class="container">
-    <canvas id="salarioCestaChart"></canvas>
-    <div class="options">
+  <label for="chartSelector">Magazine Luiza MGLU3F:</label>
+  <select id="chartSelector" onchange="changeChart()">
+      <option value="MagazineChart">Abertura</option>
+      <option value="MagazineCharts">Fechamento</option>
+  </select>
+  <h4>01/11/2023 á 30/11/2023</h4>
+  
+  <!-- Adicione um canvas para cada gráfico, mas inicialmente oculte um deles -->
+  <canvas id="MagazineChart"style="display: block;"></canvas>
+  <canvas id="MagazineCharts"style="display: none;"></canvas>
+    
         <label for="format">Escolha o formato:</label>
         <select id="format">
             <option value="png">PNG</option>
